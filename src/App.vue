@@ -1,30 +1,15 @@
+<script setup>
+import CustomHeader from '@/components/header/CustomHeader.vue';
+import CustomFooter from '@/components/footer/CustomFooter.vue';
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app" class="min-h-[100vh]">
+    <CustomHeader/>
+    <main class="container mx-auto px-3 mb-3 min-h-[78vh]">
+      <router-view/>
+    </main>
+    <CustomFooter class="items-end"/>
+    <notifications position="top center"/>
+  </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>

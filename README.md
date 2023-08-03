@@ -1,5 +1,16 @@
 # super-ecommerce
 
+## Project Requirement
+* Vue 3
+* Typescript
+* Tailwindcss
+
+## Unit Test
+- [x] Responsive
+- [x] Sorting
+- [x] Cart
+- [x] Fetch Product With Axios
+
 ## Project setup
 ```
 yarn install

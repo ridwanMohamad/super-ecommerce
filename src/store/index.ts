@@ -1,7 +1,12 @@
-import { createStore } from 'vuex'
+import Vuex from 'vuex'
+import {Users} from '@/store/modules/users'
+import { Products } from './modules/products'
+import { Cart } from './modules/cart'
 
-export default createStore({
+export default new Vuex.Store<RootState>({
   state: {
+    AppIcon: "https://www.superindo.co.id/images/new/logo-superindo.png"
+    
   },
   getters: {
   },
@@ -10,5 +15,8 @@ export default createStore({
   actions: {
   },
   modules: {
+    Users,
+    Products,
+    Cart,
   }
 })
